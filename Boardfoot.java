@@ -60,16 +60,16 @@ final class Boardfoot {
 
             // Ask for inputs
             System.out.println("Please enter the height: ");
-            final double heightInput = myObjOne.nextInt();
+            final double heightInput = myObjOne.nextDouble();
             System.out.println("Please enter the width: ");
-            final double widthInput = myObjTwo.nextInt();
+            final double widthInput = myObjTwo.nextDouble();
 
             // Calling function and outputting output.
             final double finalLength = lengthCalculator(heightInput, widthInput);
             System.out.println("The wood should be "
                 + finalLength + " inch(es) long");
 
-        } catch (java.util.InputMismatchException ex) {
+        } catch (java.util.InputMismatchException error) {
             System.out.println("That was not a valid input ");
         } finally {
             System.out.println("\nDone.");
