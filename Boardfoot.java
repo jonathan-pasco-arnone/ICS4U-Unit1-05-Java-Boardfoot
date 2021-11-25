@@ -33,11 +33,11 @@ final class Boardfoot {
     * @param width this is the width of the wood.
     * @return this function returns the length that the wood should be.
     */
-    public static int lengthCalculator(final int height, final int width) {
+    public static double lengthCalculator(final double height, final double width) {
         // Variables.
-        final int oneBoardFoot = 144;
+        final double oneBoardFoot = 144;
 
-        final int length = oneBoardFoot / (height * width);
+        final double length = oneBoardFoot / (height * width);
         return length;
 
     }
@@ -60,12 +60,12 @@ final class Boardfoot {
 
             // Ask for inputs
             System.out.println("Please enter the height: ");
-            final int heightInput = myObjOne.nextInt();
+            final double heightInput = myObjOne.nextInt();
             System.out.println("Please enter the width: ");
-            final int widthInput = myObjTwo.nextInt();
+            final double widthInput = myObjTwo.nextInt();
 
             // Calling function and outputting output.
-            final int finalLength = lengthCalculator(heightInput, widthInput);
+            final double finalLength = lengthCalculator(heightInput, widthInput);
             System.out.println("The wood should be "
                 + finalLength + " inch(es) long");
 
