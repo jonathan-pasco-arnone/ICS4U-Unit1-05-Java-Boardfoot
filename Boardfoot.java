@@ -26,10 +26,13 @@ final class Boardfoot {
         throw new IllegalStateException("Cannot be instantiated");
     }
 
-
-
-
-
+    /**
+    * This function calculates the length from the inputs provided.
+    *
+    * @param height this is the hight of the wood.
+    * @param width this is the width of the wood.
+    * @return this function returns the length that the wood should be.
+    */
     public static int lengthCalculator(final int height, final int width) {
         // Variables.
         final int oneBoardFoot = 144;
@@ -38,11 +41,6 @@ final class Boardfoot {
         return length;
 
     }
-
-
-
-
-
 
     /**
     * The starting main() function.
