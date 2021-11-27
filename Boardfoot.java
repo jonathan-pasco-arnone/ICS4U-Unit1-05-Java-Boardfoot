@@ -35,10 +35,10 @@ final class Boardfoot {
     */
     public static double lengthCalculator(
         final double height, final double width) {
-        // Variables.
-        final double oneBoardFoot = 144;
+        // Variables/Constants.
+        final double ONE_BOARD_FOOT = 144;
 
-        final double length = oneBoardFoot / (height * width);
+        final double length = ONE_BOARD_FOOT / (height * width);
         return length;
 
     }
